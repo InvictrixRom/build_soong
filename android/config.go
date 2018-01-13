@@ -528,7 +528,7 @@ func (c *deviceConfig) DeviceKernelHeaderDirs() []string {
 }
 
 func (c *deviceConfig) SpecificCameraParametersLibrary() string {
-	return String(c.config.ProductVariables.Carbon.Specific_camera_parameter_library)
+	return String(c.config.ProductVariables.Invictrix.Specific_camera_parameter_library)
 }
 
 func (c *deviceConfig) NativeCoverageEnabled() bool {
@@ -562,13 +562,13 @@ func (c *deviceConfig) BoardUsesQTIHardware() bool {
 }
 
 func (c *deviceConfig) QTIAudioPath() string {
-	return String(c.config.ProductVariables.Carbon.QTIAudioPath)
+	return String(c.config.ProductVariables.Invictrix.QTIAudioPath)
 }
 
 func (c *deviceConfig) QTIDisplayPath() string {
-	return String(c.config.ProductVariables.Carbon.QTIDisplayPath)
+	return String(c.config.ProductVariables.Invictrix.QTIDisplayPath)
 }
 
 func (c *deviceConfig) QTIMediaPath() string {
-	return String(c.config.ProductVariables.Carbon.QTIMediaPath)
+	return String(c.config.ProductVariables.Invictrix.QTIMediaPath)
 }
