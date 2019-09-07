@@ -96,6 +96,7 @@ var Configuration = map[string]PathConfig{
 	"m4":       Allowed,
 	"openssl":  Allowed,
 	"patch":    Allowed,
+	"perl":     Allowed,
 	"pstree":   Allowed,
 	"python3":  Allowed,
 	"realpath": Allowed,
@@ -109,6 +110,13 @@ var Configuration = map[string]PathConfig{
 	"xz":       Allowed,
 	"zip":      Allowed,
 	"zipinfo":  Allowed,
+
+	// Allow kernel cross compiling
+	"aarch64-linux-android-ar": Allowed,
+	"aarch64-linux-android-gcc": Allowed,
+	"aarch64-linux-android-ld": Allowed,
+	"aarch64-linux-android-objcopy": Allowed,
+	"aarch64-linux-android-objdump": Allowed,
 
 	// Host toolchain is removed. In-tree toolchain should be used instead.
 	// GCC also can't find cc1 with this implementation.
