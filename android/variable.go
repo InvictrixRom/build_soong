@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"carbon/soong/android"
+	"invictrix/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -127,8 +127,8 @@ type variableProperties struct {
 			Srcs         []string
 		}
 
-		// include Carbon variables
-		Carbon android.Product_variables
+		// include Invictrix variables
+		Invictrix android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -294,8 +294,8 @@ type productVariables struct {
 
 	TargetFSConfigGen []string `json:",omitempty"`
 
-	// include Carbon variables
-	Carbon android.ProductVariables
+	// include Invictrix variables
+	Invictrix android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
