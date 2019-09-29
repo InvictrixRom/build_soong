@@ -111,6 +111,9 @@ var Configuration = map[string]PathConfig{
 	"zip":      Allowed,
 	"zipinfo":  Allowed,
 
+	// Allow nproc in build system
+	"nproc": Allowed,
+
 	// Allow kernel cross compiling
 	"aarch64-linux-android-ar": Allowed,
 	"aarch64-linux-android-gcc": Allowed,
